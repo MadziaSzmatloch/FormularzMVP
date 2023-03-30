@@ -1,0 +1,11 @@
+D:\WinForms\FormularzMVP\FormularzMVP\bin\Debug\FormularzMVP.exe.config
+D:\WinForms\FormularzMVP\FormularzMVP\bin\Debug\FormularzMVP.exe
+D:\WinForms\FormularzMVP\FormularzMVP\bin\Debug\FormularzMVP.pdb
+D:\WinForms\FormularzMVP\FormularzMVP\obj\Debug\FormularzMVP.csproj.AssemblyReference.cache
+D:\WinForms\FormularzMVP\FormularzMVP\obj\Debug\FormularzMVP.csproj.SuggestedBindingRedirects.cache
+D:\WinForms\FormularzMVP\FormularzMVP\obj\Debug\FormularzMVP.Properties.Resources.resources
+D:\WinForms\FormularzMVP\FormularzMVP\obj\Debug\FormularzMVP.Views.EmployeeView.resources
+D:\WinForms\FormularzMVP\FormularzMVP\obj\Debug\FormularzMVP.csproj.GenerateResource.cache
+D:\WinForms\FormularzMVP\FormularzMVP\obj\Debug\FormularzMVP.csproj.CoreCompileInputs.cache
+D:\WinForms\FormularzMVP\FormularzMVP\obj\Debug\FormularzMVP.exe
+D:\WinForms\FormularzMVP\FormularzMVP\obj\Debug\FormularzMVP.pdb
