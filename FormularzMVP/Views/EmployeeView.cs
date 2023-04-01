@@ -29,12 +29,12 @@ namespace FormularzMVP.Views
             buttonDeserialize.Click += delegate { DeserializeEvent?.Invoke(this, EventArgs.Empty); };
         }
 
+        //Properties
         public string EmployeeName
         {
             get { return textBoxName.Text; }
             set { textBoxName.Text = value; }
         }
-
         public string EmployeeSurname
         {
             get => textBoxSurname.Text;
@@ -55,7 +55,6 @@ namespace FormularzMVP.Views
             get => comboBox.Text;
             set { comboBox.Text = value; }
         }
-
         public string EmployeeContract
         {
             get
@@ -82,18 +81,23 @@ namespace FormularzMVP.Views
                 }
             }
         }
-
         public ListBox EmployeeList 
         {
             get  { return listBox1; } 
             set { listBox1 = value; }
         }
 
-
+        //Events
         public event EventHandler AddEvent;
         public event EventHandler DeleteEvent;
         public event EventHandler SerializeEvent;
         public event EventHandler DeserializeEvent;
+
+        //Methods
+        public void RaiseErrorName(string message)
+        {
+            errorProvider.SetError(textBoxName, message);
+        }
 
 
         //#region TEST

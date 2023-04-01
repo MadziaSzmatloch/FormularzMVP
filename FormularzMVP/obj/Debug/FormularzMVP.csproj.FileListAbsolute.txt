@@ -9,3 +9,14 @@ D:\WinForms\FormularzMVP\FormularzMVP\obj\Debug\FormularzMVP.csproj.GenerateReso
 D:\WinForms\FormularzMVP\FormularzMVP\obj\Debug\FormularzMVP.csproj.CoreCompileInputs.cache
 D:\WinForms\FormularzMVP\FormularzMVP\obj\Debug\FormularzMVP.exe
 D:\WinForms\FormularzMVP\FormularzMVP\obj\Debug\FormularzMVP.pdb
+D:\Pliki\c#\FormularzMVP\FormularzMVP\obj\Debug\FormularzMVP.csproj.AssemblyReference.cache
+D:\Pliki\c#\FormularzMVP\FormularzMVP\obj\Debug\FormularzMVP.csproj.SuggestedBindingRedirects.cache
+D:\Pliki\c#\FormularzMVP\FormularzMVP\obj\Debug\FormularzMVP.Properties.Resources.resources
+D:\Pliki\c#\FormularzMVP\FormularzMVP\obj\Debug\FormularzMVP.Views.EmployeeView.resources
+D:\Pliki\c#\FormularzMVP\FormularzMVP\obj\Debug\FormularzMVP.csproj.GenerateResource.cache
+D:\Pliki\c#\FormularzMVP\FormularzMVP\obj\Debug\FormularzMVP.csproj.CoreCompileInputs.cache
+D:\Pliki\c#\FormularzMVP\FormularzMVP\obj\Debug\FormularzMVP.exe
+D:\Pliki\c#\FormularzMVP\FormularzMVP\obj\Debug\FormularzMVP.pdb
+D:\Pliki\c#\FormularzMVP\FormularzMVP\bin\Debug\FormularzMVP.exe.config
+D:\Pliki\c#\FormularzMVP\FormularzMVP\bin\Debug\FormularzMVP.exe
+D:\Pliki\c#\FormularzMVP\FormularzMVP\bin\Debug\FormularzMVP.pdb

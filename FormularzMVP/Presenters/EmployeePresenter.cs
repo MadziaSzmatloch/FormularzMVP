@@ -83,9 +83,17 @@ namespace FormularzMVP.Presenters
 
         private void AddEmployee(object sender, EventArgs e)
         {
-            //Console.WriteLine(_view.EmployeeName);
-            EmployeeModel model = new EmployeeModel(_view.EmployeeName, _view.EmployeeSurname, _view.EmployeeBirthDate, _view.EmployeeSalary, _view.EmployeePosition, _view.EmployeeContract);
-            _view.EmployeeList.Items.Add(model);
+            try
+            {
+                EmployeeModel model = new EmployeeModel(_view.EmployeeName, _view.EmployeeSurname, _view.EmployeeBirthDate, _view.EmployeeSalary, _view.EmployeePosition, _view.EmployeeContract);
+                _view.EmployeeList.Items.Add(model);
+            }
+            catch (ArgumentNullException error)
+            {
+                string errorMessage = error.Message.Substring(0, error.Message.IndexOf("!")+1);
+                _view.RaiseErrorName(errorMessage);
+            }
+           
         }
 
         private void DeleteEmployee(object sender, EventArgs e)
@@ -100,8 +108,5 @@ namespace FormularzMVP.Presenters
             }
             
         }
-
-        
     }
-
 }

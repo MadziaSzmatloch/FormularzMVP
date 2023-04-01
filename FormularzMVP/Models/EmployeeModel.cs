@@ -27,12 +27,63 @@ namespace FormularzMVP.Models
         }
         public EmployeeModel() { }
 
-        public string Name { get { return _name; } set { _name = value; } }
-        public string Surname { get { return _surname; } set { _surname = value; } }
+        public string Name
+        {
+            get
+            { return _name; }
+            set
+            {
+                if (string.IsNullOrEmpty(value))
+                {
+                    throw new ArgumentNullException(paramName: nameof(Name), message:"Name cannot be empty!");
+                }
+                _name = value;
+
+            }
+        }
+        public string Surname
+        {
+            get
+            { return _surname; }
+            set
+            {
+                if (string.IsNullOrEmpty(value))
+                {
+                    throw new ArgumentNullException(paramName: nameof(Surname), message: "Surname cannot be empty!");
+                }
+                _surname = value;
+
+            }
+        }
         public decimal Salary { get { return _salary; } set { _salary = value; } }
         public DateTime BirthDate { get { return _birthdate; } set { _birthdate = value; } }
-        public string Position { get { return _position; } set { _position = value; } }
-        public string Contract { get { return _contract; } set { _contract = value; } }
+        public string Position
+        {
+            get
+            { return _position; }
+            set
+            {
+                if (string.IsNullOrEmpty(value))
+                {
+                    throw new ArgumentNullException(paramName: nameof(Position), message: "Position cannot be empty!");
+                }
+                _position = value;
+
+            }
+        }
+        public string Contract 
+        { 
+            get 
+            { return _contract; } 
+            set 
+            { 
+                if (string.IsNullOrEmpty(value))
+                {
+                    Console.WriteLine("Błąd");
+                }
+                _contract = value; 
+            } 
+        }
 
         public override string ToString()
         {
