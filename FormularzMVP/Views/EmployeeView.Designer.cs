@@ -40,7 +40,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.dateTimePicker = new System.Windows.Forms.DateTimePicker();
-            this.comboBox = new System.Windows.Forms.ComboBox();
+            this.comboBoxPosition = new System.Windows.Forms.ComboBox();
             this.SalaryBox = new System.Windows.Forms.NumericUpDown();
             this.buttonAdd = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
@@ -132,7 +132,7 @@
             this.tableLayoutPanel3.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.label2, 0, 1);
             this.tableLayoutPanel3.Controls.Add(this.dateTimePicker, 1, 2);
-            this.tableLayoutPanel3.Controls.Add(this.comboBox, 1, 4);
+            this.tableLayoutPanel3.Controls.Add(this.comboBoxPosition, 1, 4);
             this.tableLayoutPanel3.Controls.Add(this.SalaryBox, 1, 3);
             this.tableLayoutPanel3.Controls.Add(this.buttonAdd, 1, 8);
             this.tableLayoutPanel3.Controls.Add(this.label4, 0, 3);
@@ -226,21 +226,21 @@
             this.dateTimePicker.Size = new System.Drawing.Size(200, 20);
             this.dateTimePicker.TabIndex = 4;
             // 
-            // comboBox
+            // comboBoxPosition
             // 
-            this.comboBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.comboBox.FormattingEnabled = true;
-            this.comboBox.Items.AddRange(new object[] {
+            this.comboBoxPosition.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.comboBoxPosition.FormattingEnabled = true;
+            this.comboBoxPosition.Items.AddRange(new object[] {
             "Trainee",
             "Junior Developer",
             "Senior Developer",
             "Manager",
             "Accountant"});
-            this.comboBox.Location = new System.Drawing.Point(175, 165);
-            this.comboBox.Name = "comboBox";
-            this.comboBox.Size = new System.Drawing.Size(200, 21);
-            this.comboBox.TabIndex = 6;
-            this.comboBox.TabStop = false;
+            this.comboBoxPosition.Location = new System.Drawing.Point(175, 165);
+            this.comboBoxPosition.Name = "comboBoxPosition";
+            this.comboBoxPosition.Size = new System.Drawing.Size(200, 21);
+            this.comboBoxPosition.TabIndex = 6;
+            this.comboBoxPosition.TabStop = false;
             // 
             // SalaryBox
             // 
@@ -467,7 +467,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DateTimePicker dateTimePicker;
-        private System.Windows.Forms.ComboBox comboBox;
+        private System.Windows.Forms.ComboBox comboBoxPosition;
         private System.Windows.Forms.NumericUpDown SalaryBox;
         private System.Windows.Forms.Button buttonAdd;
         private System.Windows.Forms.Label label4;

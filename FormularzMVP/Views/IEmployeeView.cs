@@ -24,10 +24,17 @@ namespace FormularzMVP.Views
         event EventHandler DeleteEvent;
         event EventHandler SerializeEvent;
         event EventHandler DeserializeEvent;
-
+        event EventHandler EditEvent;
+        event EventHandler ReadEmplyeeEvent;
 
         //Methods
         void RaiseErrorName(string message);
-        
+        void HideErrorName();
+        void RaiseErrorSurname(string message);
+        void HideErrorSurname();
+        void RaiseErrorPosition(string message);
+        void HideErrorPosition();
+        void HideAllErrors();
+
     }
 }

@@ -89,6 +89,8 @@ namespace FormularzMVP.Models
         {
             return $"Name: {_name}, Surname: {_surname}, Date of birth: {_birthdate}, Salary: {_salary}, Position: {_position}, Type of contract: {_contract}";
         }
+
+        
     }
 
 }

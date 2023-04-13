@@ -27,6 +27,8 @@ namespace FormularzMVP.Views
             buttonDelete.Click += delegate { DeleteEvent?.Invoke(this, EventArgs.Empty); };
             buttonSerialize.Click += delegate { SerializeEvent?.Invoke(this, EventArgs.Empty); };
             buttonDeserialize.Click += delegate { DeserializeEvent?.Invoke(this, EventArgs.Empty); };
+            buttonEdit.Click += delegate { EditEvent?.Invoke(this, EventArgs.Empty); };
+            listBox1.SelectedIndexChanged += delegate { ReadEmplyeeEvent?.Invoke(this, EventArgs.Empty); };
         }
 
         //Properties
@@ -52,8 +54,8 @@ namespace FormularzMVP.Views
         }
         public string EmployeePosition
         {
-            get => comboBox.Text;
-            set { comboBox.Text = value; }
+            get => comboBoxPosition.Text;
+            set { comboBoxPosition.Text = value; }
         }
         public string EmployeeContract
         {
@@ -92,11 +94,38 @@ namespace FormularzMVP.Views
         public event EventHandler DeleteEvent;
         public event EventHandler SerializeEvent;
         public event EventHandler DeserializeEvent;
+        public event EventHandler EditEvent;
+        public event EventHandler ReadEmplyeeEvent;
+
 
         //Methods
         public void RaiseErrorName(string message)
         {
             errorProvider.SetError(textBoxName, message);
+        }
+        public void HideErrorName()
+        {
+            errorProvider.SetError(textBoxName, string.Empty);
+        }
+        public void RaiseErrorSurname(string message)
+        {
+            errorProvider.SetError(textBoxSurname, message);
+        }
+        public void HideErrorSurname()
+        {
+            errorProvider.SetError(textBoxSurname, string.Empty);
+        }
+        public void RaiseErrorPosition(string message)
+        {
+            errorProvider.SetError(comboBoxPosition, message);
+        }
+        public void HideErrorPosition()
+        {
+            errorProvider.SetError(comboBoxPosition, string.Empty);
+        }
+        public void HideAllErrors()
+        {
+            errorProvider.Clear();
         }
 
 
